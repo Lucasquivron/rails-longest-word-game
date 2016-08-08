@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<h1> THE LONGEST WORD GAME ! </h1>
+<p> ******** Welcome to the longest word-game !******** </p>
+<p> Here is your results : </p>
+
+<p> Your word: <%= @answer %> </p>
+<p> Total time: <%= @time_taken.round(2)%> seconds </p>
+
+
+
+<div class="result">
+<p> *********************** </p>
+<h3> <%= @resultat[:message].capitalize %> </h3>
+<h3> <%= @resultat[:score].round %> Points </h3>
+<p> *********************** </p>
+</div>
+
+
+
+<form role="form" action="/game">
+<button type="submit" class="btn btn-primary">Try Again</button>
+</form>
+
+
+
+
+
+
+
+
+
